@@ -1,0 +1,260 @@
+/* -------------------------------------------------------------------------- */
+/*                                    Base                                    */
+/* -------------------------------------------------------------------------- */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 1200px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    box-shadow: 0 0 35px 1px rgb(172, 172, 172);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+:root {
+    --color-header-black: rgb(27, 27, 29);
+    --color-bleuGris: rgb(51, 77, 92);
+    --color-beige: #eae3d6;
+    --color-footer-black: rgb(57, 59, 60);
+    --color-text-grey: rgb(66, 66, 66);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Typography                                 */
+/* -------------------------------------------------------------------------- */
+h1,
+h2,
+a,
+p,
+span {
+    font-family: sans-serif;
+}
+
+.h2-boxed {
+    background-color: var(--color-bleuGris);
+    width: max-content;
+    font-size: 4rem;
+    padding: 10px 6%;
+    margin: 0 auto;
+    color: white;
+    font-weight: 400;
+    margin-top: 4rem;
+}
+
+/* ! -------------------------------------------------------------------------- */
+/* !                                    FIXE                                    */
+/* ! -------------------------------------------------------------------------- */
+.l-section-beige,
+header {
+    width: 1200px;
+}
+/* ! -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-header-black);
+}
+
+.header-brands {
+    width: 600px;
+}
+
+.header-brands>img {
+    margin-left: 15px;
+}
+
+.header-nav {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 20px 0;
+}
+
+.header-nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.header-nav-items>img {
+    width: 70px;
+}
+
+.header-nav-items>span {
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1200px) {
+    .header {
+        flex-direction: column;
+        width: 100vw;
+    }
+}
+
+/* -------------------------------- layout ------------------------------- */
+/* l-section-blanche */
+.l-section-blanche {
+    display: flex;
+    margin-top: 0rem;
+    margin-bottom: 1.75rem;
+    width: 100;
+}
+
+.l-section-blanche>.img {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4rem;
+}
+
+.l-section-blanche>.text {
+    width: 67%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-section-blanche>.text>p {
+    width: 65%;
+    margin-left: 11%;
+    color: var(--color-text-grey);
+    font-size: 1.22rem;
+    line-height: 1.5rem;
+}
+
+.l-section-blanche>.text>.text-up {
+    margin-bottom: 0;
+}
+
+/* l-section beige */
+.l-section-beige {
+    background-color: var(--color-beige);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.l-section-beige>.sct-up {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.l-section-beige .img-box>img {
+    width: 100px;
+}
+
+.l-section-beige .img-box {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.l-section-beige>.sct-down {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.l-section-beige>.sct-up>.sct-items,
+.l-section-beige>.sct-down>.sct-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.l-section-beige>.sct-up>.sct-items>span,
+.l-section-beige>.sct-down>.sct-items>span {
+    font-size: 1.25rem;
+    color: var(--color-text-grey);
+}
+
+/* -------------------------------- Section 1 ------------------------------- */
+.section1 {
+    display: flex;
+    background-color: var(--color-bleuGris);
+    color: white;
+    padding: 35px 0;
+}
+
+.section1-img {
+    width: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-text {
+    width: 66%;
+}
+
+.section1-text>h1 {
+    font-size: 3.5rem;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.section1-text>p {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+/* -------------------------------- Section 2 :Eclosion  -------------------- */
+/* -------------------------------- Section 3 ------------------------------- */
+/* -------------------------------- Section 4 :Evolution -------------------- */
+/* -------------------------------- Section 5 ------------------------------- */
+/* -------------------------------- Section 6 :Envol ------------------------ */
+/* -------------------------------- Section 7 ------------------------------- */
+
+/* --------------------------------- footer --------------------------------- */
+.footer {
+    background-color: var(--color-footer-black);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.footer .footer-icons>img {
+    width: 70px;
+    margin: 0 15px;
+}
+
+.footer>.footer-up>.footer-packs>.text,
+.footer>.footer-up>.footer-outils>.text,
+.footer>.footer-up>.footer-social>.text {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    margin-left: 15px;
+}
+
+.footer>.footer-up {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer>.cgv {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    text-align: end;
+    color: white;
+}
